@@ -1,3 +1,5 @@
+"""Calculates the area and circumference of a triangle using different inputs."""
+
 # TODO Erstelle Funktionen
 
 
