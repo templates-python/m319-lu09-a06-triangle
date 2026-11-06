@@ -1,3 +1,6 @@
+"""Calculates the area and circumference of a triangle using different inputs."""
+
+
 def area_base_height(s, hs):
     """
     Calculate the area of a triangle given its base and height.
@@ -7,6 +10,7 @@ def area_base_height(s, hs):
     :return: The area of the triangle.
     """
     return s * hs / 2
+
 
 def circumference(a, b, c):
     """
@@ -19,6 +23,7 @@ def circumference(a, b, c):
     """
     return (a + b + c) / 2
 
+
 def area_three_sides(a, b, c):
     """
     Calculate the area of a triangle using Heron's formula, given the lengths of its three sides.
@@ -30,6 +35,7 @@ def area_three_sides(a, b, c):
     """
     s = circumference(a, b, c)
     return (s * (s - a) * (s - b) * (s - c)) ** 0.5
+
 
 def area_points(ax, ay, bx, by, cx, cy):
     """
@@ -48,11 +54,13 @@ def area_points(ax, ay, bx, by, cx, cy):
     c = ((ax - bx)**2 + (ay - by)**2) ** 0.5
     return area_three_sides(a, b, c)
 
+
 def main():
     # Beispielaufruf der Funktionen
     print(area_base_height(3, 4))
     print(area_three_sides(3, 4, 5))
     print(area_points(0, 0, 3, 0, 3, 4))
+
 
 if __name__ == '__main__':
     main()
